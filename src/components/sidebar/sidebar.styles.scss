@@ -1,0 +1,156 @@
+
+
+
+
+.sidebar-container {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    height: 100%;
+    overflow-y: scroll;
+    min-width: 210px;
+
+    &::-webkit-scrollbar {
+        display: none;
+      }
+
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+    
+}
+
+.sidebar-header {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-logo {
+
+    display: flex;
+    align-items: center;
+    width: 190px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-top: 0.25rem;
+
+    img {
+
+        width: 100%;
+    }
+}
+
+.sidebar-categories {
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+
+    a {
+
+        text-decoration: none;
+        color: black;
+    }
+}
+
+.not-active {
+
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    transition: all 2s ease-in-out;
+    color: #6b7280;
+    gap: 0.75rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+
+    &:hover {
+
+        color: black;
+    }
+}
+
+.is-active {
+
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    transition: all 0.5s ease-in-out;
+    gap: 0.75rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    border-right: 2px solid black;
+    font-weight: 800;
+   
+}
+
+
+
+.category-title {
+
+    margin-top: 0.5rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+
+    @media (min-width: 1536px) {
+
+        font-size: 1.5rem;
+        line-height: 2rem;
+     }
+}
+
+.category-name {
+
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    gap: 0.75rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    width: 100%;
+
+    &:hover {
+        
+        background: whitesmoke;
+    }
+}
+
+.category-img {
+
+    width: 2rem;
+    height: 2rem;
+    border: radius 9999px;
+    box-shadow: 0 1px 2px 0 #0000000d;
+}
+
+.category-user {
+
+    display: flex;
+    margin-top: 1.25rem;
+    margin-bottom: 0.75rem;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+    align-items: center;
+    background-color: white;
+    gap: 0.5rem;padding: 0.5rem;
+    box-shadow: 0 10px 15px -3px #0000001a, 0 4px 6px -4px hsla(0, 0%, 0%, 0.1);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+
+    img {
+
+        border-radius: 9999px;
+        width: 2.50rem;
+        height: 2.50rem;
+    }
+}
