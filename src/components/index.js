@@ -6,3 +6,5 @@ export {default as Feed} from "./feed/Feed.component";
 export {default as PinDetail} from "./pin-detail/PinDetail.component";
 export {default as CreatePin} from "./create-pin/CreatePin.component";
 export {default as Search} from "./search/Search.component";
+export {default as Spinner} from "./spinner/Spinner.component";
+export {default as MasonryLayout} from "./masonry-layout/MasonryLayout";
