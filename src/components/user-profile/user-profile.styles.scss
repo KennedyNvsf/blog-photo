@@ -1,0 +1,153 @@
+
+
+.user-profile-wrapper {
+
+    position: relative;
+    padding-bottom: 0.5rem;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    
+    @media (min-width: 1024px) {
+        
+        width: 75vw;
+
+    }
+}
+
+.user-profile-container {
+
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1.25rem;
+   
+}
+
+.user-feed {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.75rem;
+    
+}
+
+.user-feed-pics {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+
+    .user-cover-photo {
+
+        width: 100%;
+        height: 370px;
+        object-fit: cover;
+        box-shadow: 0 10px 15px -3px #0000001a, 0 4px 6px -4px #0000001a;
+
+        @media (min-width: 1536px) { 
+
+            height: 510px;
+        }
+    }
+
+    .user-profile-photo {
+
+        border-radius: 9999px;
+        height: 5rem;
+        width: 5rem;
+        margin-top: -2.5rem;
+        object-fit: cover;
+        box-shadow: 0 20px 25px -5px #0000001a, 0 8px 10px -6px #0000001a;
+        
+    }
+}
+
+.username-header {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0.75rem;
+    font-size: 1.875rem; 
+    line-height: 2.25rem;
+}
+
+.logout-container {
+
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+    right: 0px;
+    padding: 0.5rem;
+
+    .logout-btn {
+
+        border: none;
+        background-color: white;
+        padding: 0.5rem;
+        border-radius: 9999px;
+        cursor: pointer;
+        outline: none;
+        box-shadow: 0 4px 6px -1px #0000001a, 0 2px 4px -2px #0000001a;
+
+    }
+
+}
+
+
+.created-and-saved {
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.75rem;
+
+}
+
+.active-btn {
+
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem;
+    border-radius: 9999px;
+    width: 5rem;
+    outline: none;
+    background-color: #ef4444;
+    border: none;
+}
+
+.not-active-btn {
+
+    margin-right: 1rem;
+    color: black;
+    font-weight: bold;
+    padding: 0.5rem;
+    border-radius: 9999px;
+    width: 5rem;
+    outline: none;
+    background: none;
+    border: none;
+}
+
+.image-grid {
+
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.no-pins {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    align-items: center;
+    width: 100%;
+    margin-top: 0.5rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem; 
+}
